@@ -1,0 +1,9 @@
+import json
+with open("full_forms01.json") as file:
+    data=json.load(file)
+while True:
+    user_input=input("YOU:")    
+    if "hi" in user_input or "who" in user_input or user_input in data:
+        print("BOT:",data[user_input])
+    else:
+        print("I do not have this one")    
